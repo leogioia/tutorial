@@ -1,6 +1,6 @@
-# Java 11 + Maven
+# Forzare l'utilizzo di uno specifico JDK con Maven
 
-[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/java-11-maven)
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/forzare-utilizzo-di-uno-specifico-JDK-con-maven)
 
 ## Descrizione
 

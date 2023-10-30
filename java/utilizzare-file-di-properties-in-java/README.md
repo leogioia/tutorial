@@ -1,6 +1,6 @@
-# Utilizzo di properties file in Java
+# Utilizzare file di properties in Java
 
-[Codice GitHub]()
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/utilizzare-file-di-properties-in-java)
 
 ## Descrizione
 

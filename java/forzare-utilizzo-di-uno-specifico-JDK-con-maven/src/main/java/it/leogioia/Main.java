@@ -1,4 +1,4 @@
-package it.leogioia.java.undici.maven;
+package it.leogioia;
 
 import lombok.extern.slf4j.Slf4j;
 

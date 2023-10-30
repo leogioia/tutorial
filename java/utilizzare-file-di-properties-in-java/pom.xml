@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>it.leogioia</groupId>
-    <artifactId>properties-file-java-11-maven</artifactId>
+    <artifactId>tutorial</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
@@ -97,7 +97,7 @@
                             <archive>
                                 <manifest>
                                     <mainClass>
-                                        it.leogioia.properties.file.java.undici.maven.Main
+                                        it.leogioia.Main
                                     </mainClass>
                                 </manifest>
                             </archive>
