@@ -158,7 +158,7 @@ java -jar mia-applicazione.jar
 
 ## Invocare le Api REST
 
-Per le Api REST bisogna eseguire le seguenti curl:
+Per invocare le Api REST bisogna eseguire le seguenti curl:
 
 1. Recupero di tutte le anagrafiche:
 ```bash
