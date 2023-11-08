@@ -156,9 +156,9 @@ Per eseguire l'applicazione bisogna spostarsi nella cartella **target** ed esegu
 java -jar mia-applicazione.jar
 ```
 
-## Testare l'applicazione
+## Invocare le Api REST
 
-Per testare l'applicazione bisogna eseguire le seguenti curl:
+Per le Api REST bisogna eseguire le seguenti curl:
 
 1. Recupero di tutte le anagrafiche:
 ```bash
