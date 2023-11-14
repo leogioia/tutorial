@@ -12,7 +12,7 @@ Questo tutorial mostra come esporre api REST in modalità code first utilizzando
 - Maven
 - Spring Boot 2.7.11
 
-## Aggiungere Spring Boot nella sezione di dependency management
+## Aggiungere Spring Boot nella sezione di dependency management al pom.xml
 
 Per la gestione delle dipendenze Spring Boot bisogna aggiungere nel file **pom.xml** la dipendenza **spring-boot-starter-parent** nella sezione di **dependencyManagement**.
 
@@ -30,7 +30,7 @@ Per la gestione delle dipendenze Spring Boot bisogna aggiungere nel file **pom.x
 </dependencyManagement>
 ```
 
-## Aggiungere le dipendenze necessarie
+## Aggiungere le dipendenze necessarie al pom.xml
 
 Per l'esposizione delle Api REST bisogna bisogna aggiungere nel file **pom.xml** le dipendenze **spring-boot-starter-web** e **swagger-annotations**.
 

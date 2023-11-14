@@ -12,7 +12,7 @@ Questo tutorial mostra come creare un’applicazione Java 11 utilizzando maven.
 - JUnit 5
 - Maven
 
-## Aggiungere le dipendenze necessarie
+## Aggiungere le dipendenze necessarie al pom.xml
 
 Per l'esecuzione dei test bisogna aggiungere nel file **pom.xml** la dipendenza **junit-jupiter**.
 

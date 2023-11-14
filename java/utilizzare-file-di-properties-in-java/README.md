@@ -11,7 +11,7 @@ Questo tutorial mostra come creare un’applicazione Java 11 per recuperare le c
 - Java 11
 - Maven
 
-## Aggiungere le dipendenze necessarie
+## Aggiungere le dipendenze necessarie al pom.xml
 
 Per la lettura delle properties si è scelto di sfruttare un'apposita libreria di Apache.
 
