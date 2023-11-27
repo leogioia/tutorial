@@ -4,7 +4,7 @@
 
 ## Descrizione
 
-Questo tutorial mostra come esporre api REST in modalità code first utilizzando Spring Boot.
+Questo tutorial mostra come esporre api REST in modalità contract first utilizzando Spring Boot e Openapi3.
 
 ## Prerequisiti
 
