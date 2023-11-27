@@ -1,0 +1,145 @@
+swagger: '2.0'
+info:
+  description: 'Anagrafica'
+  version: 1.0.0
+  title: 'Esempio API Anagrafica'
+basePath: /api/v1
+tags:
+  - name: Anagrafica
+
+paths:
+
+  '/anagrafiche':
+    get:
+      tags:
+        - "Anagrafica"
+      operationId: getAnagrafiche
+      produces:
+        - "application/json"
+      responses:
+        '200':
+          description: "Success"
+          schema:
+            $ref: "#/definitions/ListaAnagrafiche"
+        '400':
+          description: "Bad Request"
+          schema:
+            $ref: "#/definitions/Error"
+        '401':
+          description: "Unauthorized"
+          schema:
+            $ref: "#/definitions/Error"
+        '500':
+          description: "Internal Server Error"
+          schema:
+            $ref: "#/definitions/Error"
+        '503':
+          description: "Service Unavailable"
+          schema:
+            $ref: "#/definitions/Error"
+
+    post:
+      tags:
+        - "Anagrafica"
+      operationId: postAnagrafica
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/Anagrafica'
+      responses:
+        '200':
+          description: "Success"
+          schema:
+            $ref: "#/definitions/Anagrafica"
+        '400':
+          description: "Bad Request"
+          schema:
+            $ref: "#/definitions/Error"
+        '401':
+          description: "Unauthorized"
+          schema:
+            $ref: "#/definitions/Error"
+        '500':
+          description: "Internal Server Error"
+          schema:
+            $ref: "#/definitions/Error"
+        '503':
+          description: "Service Unavailable"
+          schema:
+            $ref: "#/definitions/Error"
+
+  '/anagrafiche/{idAnagrafica}':
+    get:
+      tags:
+        - "Anagrafica"
+      operationId: getAnagrafica
+      parameters:
+        - in: path
+          name: idAnagrafica
+          required: true
+          description: "Identificativo anagrafica"
+          type: string
+      responses:
+        '200':
+          description: "Success"
+          schema:
+            $ref: "#/definitions/Anagrafica"
+        '400':
+          description: "Bad Request"
+          schema:
+            $ref: "#/definitions/Error"
+        '401':
+          description: "Unauthorized"
+          schema:
+            $ref: "#/definitions/Error"
+        '500':
+          description: "Internal Server Error"
+          schema:
+            $ref: "#/definitions/Error"
+        '503':
+          description: "Service Unavailable"
+          schema:
+            $ref: "#/definitions/Error"
+
+definitions:
+
+  ListaAnagrafiche:
+    type: array
+    items:
+      $ref: "#/definitions/Anagrafica"
+
+  Anagrafica:
+    type: object
+    required:
+      - id
+      - nome
+      - cognome
+      - indirizzo
+    properties:
+      id:
+        type: string
+      nome:
+        type: string
+      cognome:
+        type: string
+      indirizzo:
+        type: string
+
+  Error:
+    type: object
+    required:
+      - code
+      - message
+      - layer
+      - component
+    properties:
+      code:
+        type: string
+      message:
+        type: string
+      layer:
+        type: string
+      component:
+        type: string
