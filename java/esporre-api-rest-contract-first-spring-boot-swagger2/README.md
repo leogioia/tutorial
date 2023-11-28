@@ -217,7 +217,7 @@ definitions:
 
 ## Aggiungere il plugin per la generazione automatica delle interfacce Spring al pom.xml
 
-Per la generazione delle interfacce Spring bisogna aggiungere il plugin **openapi-generator-maven-plugin** al file **pom.xml**.
+Per la generazione delle interfacce Spring bisogna aggiungere il plugin **swagger-codegen-maven-plugin** al file **pom.xml**.
 
 Questo plugin si occupa della generazione degli stub server (nella directory **target/generated-sources**) da implementare per l'esposizione delle api REST.
 
