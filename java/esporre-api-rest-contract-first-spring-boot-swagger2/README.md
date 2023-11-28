@@ -37,7 +37,6 @@ Per l'esposizione delle Api REST bisogna bisogna aggiungere nel file **pom.xml**
 1. **spring-boot-starter-web**
 2. **swagger-annotations**
 3. **validation-api**
-4. **jackson-databind-nullable**
 
 ```xml
 <dependency>
