@@ -1,6 +1,6 @@
 # Utilizzare file di properties in Spring Boot
 
-[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/utilizzare-file-di-properties-in-java)
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/utilizzare-file-di-properties-in-spring-boot)
 
 ## Descrizione
 
