@@ -1,0 +1,89 @@
+openapi: "3.0.0"
+info:
+  description: 'Anagrafica'
+  version: 1.0.0
+  title: 'Esempio API Anagrafica'
+servers:
+  - url: /api/v1
+tags:
+  - name: Anagrafica
+
+paths:
+
+  '/anagrafiche/{idAnagrafica}':
+    get:
+      tags:
+        - "Anagrafica"
+      operationId: getAnagrafica
+      parameters:
+        - in: path
+          name: idAnagrafica
+          required: true
+          description: "Identificativo anagrafica"
+          schema:
+            type: string
+      responses:
+        '200':
+          description: "Success"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Anagrafica"
+        '400':
+          description: "Bad Request"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        '401':
+          description: "Unauthorized"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        '500':
+          description: "Internal Server Error"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+        '503':
+          description: "Service Unavailable"
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+
+components:
+
+  schemas:
+
+    Anagrafica:
+      type: object
+      required:
+        - id
+        - nome
+        - cognome
+        - indirizzo
+      properties:
+        id:
+          type: string
+        nome:
+          type: string
+        cognome:
+          type: string
+        indirizzo:
+          type: string
+
+    Error:
+      type: object
+      required:
+        - code
+        - message
+        - layer
+        - component
+      properties:
+        code:
+          type: string
+        message:
+          type: string
