@@ -1,10 +1,8 @@
 # Esporre Api REST contract first utilizzando Spring Boot e Openapi3
 
-[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/esporre-api-rest-contract-first-spring-boot-openapi3)
-
-## Descrizione
-
 Questo tutorial mostra come esporre api REST in modalità contract first utilizzando Spring Boot e Openapi3.
+
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/esporre-api-rest-contract-first-spring-boot-openapi3)
 
 ## Prerequisiti
 

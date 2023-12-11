@@ -1,10 +1,8 @@
 # Esporre Api REST code first utilizzando Spring Boot
 
-[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/esporre-api-rest-code-first-spring-boot)
-
-## Descrizione
-
 Questo tutorial mostra come esporre api REST in modalità code first utilizzando Spring Boot.
+
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/esporre-api-rest-code-first-spring-boot)
 
 ## Prerequisiti
 

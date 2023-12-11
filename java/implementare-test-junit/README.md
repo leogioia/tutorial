@@ -1,10 +1,8 @@
 # Implementare test JUnit
 
-[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/implementare-test-junit)
-
-## Descrizione
-
 Questo tutorial mostra come creare un’applicazione Java 11 utilizzando maven.
+
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/implementare-test-junit)
 
 ## Prerequisiti
 

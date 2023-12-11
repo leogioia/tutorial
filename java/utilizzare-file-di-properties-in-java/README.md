@@ -1,10 +1,8 @@
 # Utilizzare file di properties in Java
 
-[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/utilizzare-file-di-properties-in-java)
-
-## Descrizione
-
 Questo tutorial mostra come creare un’applicazione Java 11 per recuperare le configurazioni applicative da file di properties.
+
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/utilizzare-file-di-properties-in-java)
 
 ## Prerequisiti
 

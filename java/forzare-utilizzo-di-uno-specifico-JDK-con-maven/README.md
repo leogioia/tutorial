@@ -1,10 +1,8 @@
 # Forzare l'utilizzo di uno specifico JDK con Maven
 
-[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/forzare-utilizzo-di-uno-specifico-JDK-con-maven)
-
-## Descrizione
-
 Questo tutorial mostra come creare un’applicazione Java 11 utilizzando maven.
+
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/forzare-utilizzo-di-uno-specifico-JDK-con-maven)
 
 ## Prerequisiti
 

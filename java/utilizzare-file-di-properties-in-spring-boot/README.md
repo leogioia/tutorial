@@ -1,12 +1,10 @@
 # Utilizzare file di properties in Spring Boot
 
-[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/utilizzare-file-di-properties-in-spring-boot)
-
-## Descrizione
-
 Questo tutorial mostra come utilizzare un file di properties per esternalizzare configurazioni applicative.
 
 Per l'esempio seguente viene implementata un'api REST che sfrutta l'utilizzo di properties per costruire la risposta.
+
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/utilizzare-file-di-properties-in-spring-boot)
 
 ## Prerequisiti
 

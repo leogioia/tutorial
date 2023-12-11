@@ -1,10 +1,8 @@
 # Implementare test JUnit per api REST in Spring Boot
 
-[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/implementare-test-junit-api-rest-spring-boot)
-
-## Descrizione
-
 Questo tutorial mostra come implementare dei test JUnit per richiamare un'api REST esposta utilizzando Spring Boot.
+
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/implementare-test-junit-api-rest-spring-boot)
 
 ## Prerequisiti
 

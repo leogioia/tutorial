@@ -1,10 +1,9 @@
 # Gestire errori HTTP in api REST esposta tramite Spring Boot
 
-[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/gestione-errori-http-rest-spring-boot)
-
-## Descrizione
-
 Questo tutorial mostra come gestire gli errori in un'api REST esposta tramite Spring Boot e Openapi3.
+Gli errori gestiti vengono in prima battuta dichiaratti nell'interfaccia Openapi3 e successivamente gestiti nell'applicativo.
+
+[Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/gestione-errori-http-rest-spring-boot)
 
 ## Prerequisiti
 
