@@ -4,12 +4,12 @@ Questo tutorial mostra come creare un’applicazione Java 11 utilizzando maven.
 
 [Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/forzare-utilizzo-di-uno-specifico-JDK-con-maven)
 
-## Prerequisiti
+### Prerequisiti
 
 - Java 11
 - Maven
 
-## Forzare l'utilizzo del JDK corretto
+### Forzare l'utilizzo del JDK corretto
 
 Per controllare l'utilizzo della versione di Java corretta bisogna aggiungere al file **pom.xml** il plugin maven **maven-enforcer-plugin**.
 Nel caso in cui il JDK utilizzato non è quello specificato nel plugin, maven interromperà la build.
@@ -37,7 +37,7 @@ Nel caso in cui il JDK utilizzato non è quello specificato nel plugin, maven in
 </plugin>
 ```
 
-## Compilare il progetto indicando il JDK corretto
+### Compilare il progetto indicando il JDK corretto
 
 Per compilare il progetto utilizzando la corretta versione di Java bisogna aggiungere al file **pom.xml** il plugin maven **maven-compiler-plugin**.
 
@@ -52,7 +52,7 @@ Per compilare il progetto utilizzando la corretta versione di Java bisogna aggiu
 </plugin>
 ```
 
-## Creare un eseguibile jar
+### Creare un eseguibile jar
 
 Per creare un eseguibile jar, contenente anche le eventuali dipendenze utilizzare, bisogna aggiungere al file **pom.xml** il plugin maven **maven-assembly-plugin**.
 
@@ -88,7 +88,7 @@ Al termine della fase di **package** verrà creato un pacchetto jar all'interno 
 </plugin>
 ```
 
-## Creare una classe Main
+### Creare una classe Main
 
 Per l'utilizzo dell'applicazione bisogna creare una classe contenente un metodo **main**.
 
@@ -108,7 +108,7 @@ public class Main {
 }
 ```
 
-## Compilare l'applicazione
+### Compilare l'applicazione
 
 Per compilare l'applicazione bisogna spostarsi nella cartella contenente il file **pom.xml** ed eseguire il seguente comando.
 
@@ -116,7 +116,7 @@ Per compilare l'applicazione bisogna spostarsi nella cartella contenente il file
 mvn clean package
 ```
 
-## Eseguire l'applicazione
+### Eseguire l'applicazione
 
 Per eseguire l'applicazione bisogna spostarsi nella cartella **target** ed eseguire il seguente comando.
 

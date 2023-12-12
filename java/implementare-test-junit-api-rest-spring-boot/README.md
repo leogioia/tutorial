@@ -4,13 +4,13 @@ Questo tutorial mostra come implementare dei test JUnit per richiamare un'api RE
 
 [Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/implementare-test-junit-api-rest-spring-boot)
 
-## Prerequisiti
+### Prerequisiti
 
 - Java 17
 - Maven
 - Spring Boot 2.7.11
 
-## Aggiungere le dipendenze Spring Boot necessarie a lanciare i test al pom.xml
+### Aggiungere le dipendenze Spring Boot necessarie a lanciare i test al pom.xml
 
 Per l'implementazione dei test per un applicazione Spring Boot bisogna aggiungere nel file **pom.xml** la dipendenza **spring-boot-starter-test**.
 
@@ -23,7 +23,7 @@ Per l'implementazione dei test per un applicazione Spring Boot bisogna aggiunger
 </dependency>
 ```
 
-## Aggiungere la dipendenza JUnit al pom.xml
+### Aggiungere la dipendenza JUnit al pom.xml
 
 Per l'implementazione dei test bisogna aggiungere nel file **pom.xml** la dipendenza **junit-jupiter**.
 
@@ -36,7 +36,7 @@ Per l'implementazione dei test bisogna aggiungere nel file **pom.xml** la dipend
 </dependency>
 ```
 
-## Aggiungere l'annotazione @SpringBootTest alla classe di test
+### Aggiungere l'annotazione @SpringBootTest alla classe di test
 
 Per l'esecuzione di un test tramite Spring Boot bisogna aggiungere l'annotation @SpringBootTest alla classe di test.
 
@@ -68,7 +68,7 @@ public class AnagraficaApiTest {
 }
 ```
 
-## Creare un @Test
+### Creare un @Test
 
 Per creare un semplice test JUnit bisogna annotare il metodo con l'annotation **@Test**.
 
@@ -97,7 +97,7 @@ public void testGetAnagrafiche(TestInfo testInfo) throws Exception {
 }
 ```
 
-## Creare un @ParameterizedTest
+### Creare un @ParameterizedTest
 
 Per creare un test JUnit parametrizzato bisogna annotare il metodo con le annotation:
 1. **@ParameterizedTest**
@@ -155,7 +155,7 @@ public void testPostAndGetAnagrafica(String id, String nome, String cognome, Str
 }
 ```
 
-## Esecuzione automatica dei test
+### Esecuzione automatica dei test
 
 Per eseguire i test in modo automatico bisogna spostarsi nella cartella contenente il file **pom.xml** ed eseguire il seguente comando:
 

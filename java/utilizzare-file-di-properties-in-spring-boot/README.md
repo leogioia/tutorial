@@ -6,13 +6,13 @@ Per l'esempio seguente viene implementata un'api REST che sfrutta l'utilizzo di 
 
 [Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/utilizzare-file-di-properties-in-spring-boot)
 
-## Prerequisiti
+### Prerequisiti
 
 - Java 17
 - Maven
 - Spring Boot 2.7.11
 
-## Aggiungere Spring Boot nella sezione di dependency management al pom.xml
+### Aggiungere Spring Boot nella sezione di dependency management al pom.xml
 
 Per la gestione delle dipendenze Spring Boot bisogna aggiungere nel file **pom.xml** la dipendenza **spring-boot-starter-parent** nella sezione di **dependencyManagement**.
 
@@ -30,7 +30,7 @@ Per la gestione delle dipendenze Spring Boot bisogna aggiungere nel file **pom.x
 </dependencyManagement>
 ```
 
-## Aggiungere le dipendenze necessarie al pom.xml
+### Aggiungere le dipendenze necessarie al pom.xml
 
 Per l'esposizione delle Api REST bisogna bisogna aggiungere nel file **pom.xml** le dipendenze **spring-boot-starter-web** e **swagger-annotations**.
 
@@ -47,7 +47,7 @@ Per l'esposizione delle Api REST bisogna bisogna aggiungere nel file **pom.xml**
 </dependency>
 ```
 
-## Creare una classe Main
+### Creare una classe Main
 
 Per l'utilizzo dell'applicazione bisogna creare una classe contenente un metodo **main** annotata con l'annotation **org.springframework.boot.SpringApplication**.
 
@@ -71,7 +71,7 @@ public class Application {
 }
 ```
 
-## Creare un @Service per la lettura di properties diverse da semplici String
+### Creare un @Service per la lettura di properties diverse da semplici String
 
 In questo esempio si utilizzano due properties:
 1. **descrizione.offerte**: una semplice _String_
@@ -103,7 +103,7 @@ public class PropertyService {
 }
 ```
 
-## Creare un apposito @Controller per l'esposizione delle Api REST
+### Creare un apposito @Controller per l'esposizione delle Api REST
 
 In questo esempio si espone un'api REST con le funzionalità:
 1. **GET /prodotti (metodo getProdotti)**: per il recupero di tutti i prodotti
@@ -153,7 +153,7 @@ public class ProdottoApi {
 }
 ```
 
-## Creare files di properties
+### Creare files di properties
 
 Spring Boot supporta la lettura di un file di properties di default chiamato **application.properties** e situato nella directory **src/main/resources**.
 
@@ -175,7 +175,7 @@ descrizione.offerte=Offerte Black Friday
 lista.prodotti=Frullatore:50,Frigorifero:600,Tostapane:20
 ```
 
-## Compilare l'applicazione
+### Compilare l'applicazione
 
 Per compilare l'applicazione bisogna spostarsi nella cartella contenente il file **pom.xml** ed eseguire il seguente comando:
 
@@ -183,7 +183,7 @@ Per compilare l'applicazione bisogna spostarsi nella cartella contenente il file
 mvn clean package
 ```
 
-## Eseguire l'applicazione
+### Eseguire l'applicazione
 
 Per eseguire l'applicazione bisogna spostarsi nella cartella **target** ed eseguire:
 
@@ -199,7 +199,7 @@ java -jar mia-applicazione.jar
 java -Dspring.profiles.active=local -jar mia-applicazione.jar
 ```
 
-## Invocare le Api REST
+### Invocare le Api REST
 
 Per invocare le Api REST bisogna eseguire la seguente curl:
 

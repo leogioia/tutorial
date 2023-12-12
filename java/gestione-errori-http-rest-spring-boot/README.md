@@ -5,14 +5,14 @@ Gli errori gestiti vengono in prima battuta dichiaratti nell'interfaccia Openapi
 
 [Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/gestione-errori-http-rest-spring-boot)
 
-## Prerequisiti
+### Prerequisiti
 
 - Java 17
 - Maven
 - Spring Boot 2.7.11
 - Openapi 3
 
-## Aggiungere Spring Boot nella sezione di dependency management al pom.xml
+### Aggiungere Spring Boot nella sezione di dependency management al pom.xml
 
 Per la gestione delle dipendenze Spring Boot bisogna aggiungere nel file **pom.xml** la dipendenza **spring-boot-starter-parent** nella sezione di **dependencyManagement**.
 
@@ -30,7 +30,7 @@ Per la gestione delle dipendenze Spring Boot bisogna aggiungere nel file **pom.x
 </dependencyManagement>
 ```
 
-## Aggiungere le dipendenze necessarie al pom.xml
+### Aggiungere le dipendenze necessarie al pom.xml
 
 Per l'esposizione delle Api REST bisogna bisogna aggiungere nel file **pom.xml** le dipendenze:
 1. **spring-boot-starter-web**
@@ -63,7 +63,7 @@ Per l'esposizione delle Api REST bisogna bisogna aggiungere nel file **pom.xml**
 </dependency>
 ```
 
-## Creare un Enum per la gestione degli errori
+### Creare un Enum per la gestione degli errori
 
 Per gestire gli errori, in questo esempio, è stato creato un Enum che contiene 3 campi:
 1. Codice errore
@@ -86,7 +86,7 @@ public enum ErrorEnum {
 }
 ```
 
-## Creare un'eccezione custom
+### Creare un'eccezione custom
 
 Per rilanciare errori da un qualsiasi punto dell'applicazione bisogna creare una eccezione custom che estenda **RuntimeException** e contenga al proprio interno un'istanza dell'enum creato precedentemente.
 
@@ -105,7 +105,7 @@ public class ErrorException extends RuntimeException {
 }
 ```
 
-## Creare un @ControllerAdvice per intercettare e gestire le eccezioni
+### Creare un @ControllerAdvice per intercettare e gestire le eccezioni
 
 Per intercettare e gestire le eccezioni rilanciate all'interno dell'applicazione bisogna creare un apposito **@ControllerAdvice** che al proprio interno intercetti e gestisca le eccezioni rilanciate dall'applicazione.
 
@@ -163,7 +163,7 @@ public class ExceptionHandlingController {
 }
 ```
 
-## Creare un @Controller che restituisca l'errore HTTP appropriato
+### Creare un @Controller che restituisca l'errore HTTP appropriato
 
 Per implementare la logica di restituzione del corretto errore HTTP bisogna creare un **@Controller** che rilanci l'eccezione corretta.
 
@@ -204,7 +204,7 @@ public class AnagraficaApiImpl implements AnagraficheApi {
 }
 ```
 
-## Compilare l'applicazione
+### Compilare l'applicazione
 
 Per compilare l'applicazione bisogna spostarsi nella cartella contenente il file **pom.xml** ed eseguire il seguente comando:
 
@@ -212,7 +212,7 @@ Per compilare l'applicazione bisogna spostarsi nella cartella contenente il file
 mvn clean package
 ```
 
-## Eseguire l'applicazione
+### Eseguire l'applicazione
 
 Per eseguire l'applicazione bisogna spostarsi nella cartella **target** ed eseguire il seguente comando:
 
@@ -220,7 +220,7 @@ Per eseguire l'applicazione bisogna spostarsi nella cartella **target** ed esegu
 java -jar mia-applicazione.jar
 ```
 
-## Invocare le Api REST
+### Invocare le Api REST
 
 Si invocare l'api REST con un idAnagrafica non presente tramite il comando:
 

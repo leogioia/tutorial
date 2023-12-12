@@ -4,14 +4,14 @@ Questo tutorial mostra come esporre api REST in modalità contract first utilizz
 
 [Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/esporre-api-rest-contract-first-spring-boot-openapi3)
 
-## Prerequisiti
+### Prerequisiti
 
 - Java 17
 - Maven
 - Spring Boot 2.7.11
 - Openapi 3
 
-## Aggiungere Spring Boot nella sezione di dependency management al pom.xml
+### Aggiungere Spring Boot nella sezione di dependency management al pom.xml
 
 Per la gestione delle dipendenze Spring Boot bisogna aggiungere nel file **pom.xml** la dipendenza **spring-boot-starter-parent** nella sezione di **dependencyManagement**.
 
@@ -29,7 +29,7 @@ Per la gestione delle dipendenze Spring Boot bisogna aggiungere nel file **pom.x
 </dependencyManagement>
 ```
 
-## Aggiungere le dipendenze necessarie al pom.xml
+### Aggiungere le dipendenze necessarie al pom.xml
 
 Per l'esposizione delle Api REST bisogna bisogna aggiungere nel file **pom.xml** le dipendenze:
 1. **spring-boot-starter-web**
@@ -62,7 +62,7 @@ Per l'esposizione delle Api REST bisogna bisogna aggiungere nel file **pom.xml**
 </dependency>
 ```
 
-## Creare un'interfaccia Openapi 3
+### Creare un'interfaccia Openapi 3
 
 Per la creazione di un'interfaccia Openapi 3 bisogna creare un file YAML che descriva l'api che si vuole esporre.
 
@@ -252,7 +252,7 @@ components:
           type: string
 ```
 
-## Aggiungere il plugin per la generazione automatica delle interfacce Spring al pom.xml
+### Aggiungere il plugin per la generazione automatica delle interfacce Spring al pom.xml
 
 Per la generazione delle interfacce Spring bisogna aggiungere il plugin **openapi-generator-maven-plugin** al file **pom.xml**.
 
@@ -293,7 +293,7 @@ Questo plugin si occupa della generazione degli stub server (nella directory **t
 </plugin>
 ```
 
-## Generare gli stub server Spring Boot
+### Generare gli stub server Spring Boot
 
 Per generare gli stub server bisogna lanciare il comando:
 
@@ -301,7 +301,7 @@ Per generare gli stub server bisogna lanciare il comando:
 mvn clean generate-sources
 ```
 
-## Creare un @Controller che implementi l'interfaccia Stub
+### Creare un @Controller che implementi l'interfaccia Stub
 
 Per esporre le api REST bisogna creare una classe annotata con **@Controller** che implementi l'interfaccia generata automaticamente.
 
@@ -345,7 +345,7 @@ public class AnagraficaApiImpl implements AnagraficheApi {
 }
 ```
 
-## Compilare l'applicazione
+### Compilare l'applicazione
 
 Per compilare l'applicazione bisogna spostarsi nella cartella contenente il file **pom.xml** ed eseguire il seguente comando:
 
@@ -353,7 +353,7 @@ Per compilare l'applicazione bisogna spostarsi nella cartella contenente il file
 mvn clean package
 ```
 
-## Eseguire l'applicazione
+### Eseguire l'applicazione
 
 Per eseguire l'applicazione bisogna spostarsi nella cartella **target** ed eseguire il seguente comando:
 
@@ -361,7 +361,7 @@ Per eseguire l'applicazione bisogna spostarsi nella cartella **target** ed esegu
 java -jar mia-applicazione.jar
 ```
 
-## Invocare le Api REST
+### Invocare le Api REST
 
 Per invocare le Api REST bisogna eseguire le seguenti curl:
 

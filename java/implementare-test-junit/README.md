@@ -4,13 +4,13 @@ Questo tutorial mostra come creare un’applicazione Java 11 utilizzando maven.
 
 [Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/implementare-test-junit)
 
-## Prerequisiti
+### Prerequisiti
 
 - Java 17
 - JUnit 5
 - Maven
 
-## Aggiungere le dipendenze necessarie al pom.xml
+### Aggiungere le dipendenze necessarie al pom.xml
 
 Per l'esecuzione dei test bisogna aggiungere nel file **pom.xml** la dipendenza **junit-jupiter**.
 
@@ -23,7 +23,7 @@ Per l'esecuzione dei test bisogna aggiungere nel file **pom.xml** la dipendenza 
 </dependency>
 ```
 
-## Forzare l'utilizzo del JDK corretto
+### Forzare l'utilizzo del JDK corretto
 
 Per controllare l'utilizzo della versione di Java corretta bisogna aggiungere al file **pom.xml** il plugin maven **maven-enforcer-plugin**.
 Nel caso in cui il JDK utilizzato non è quello specificato nel plugin, maven interromperà la build.
@@ -51,7 +51,7 @@ Nel caso in cui il JDK utilizzato non è quello specificato nel plugin, maven in
 </plugin>
 ```
 
-## Compilare il progetto indicando il JDK corretto
+### Compilare il progetto indicando il JDK corretto
 
 Per compilare il progetto utilizzando la corretta versione di Java bisogna aggiungere al file **pom.xml** il plugin maven **maven-compiler-plugin**.
 
@@ -66,7 +66,7 @@ Per compilare il progetto utilizzando la corretta versione di Java bisogna aggiu
 </plugin>
 ```
 
-## Creare una classe contenente la logica di business
+### Creare una classe contenente la logica di business
 
 Per poter creare un test, bisogna prima creare la classe su cui eseguire il test sotto la directory **src/main/java**.
 
@@ -85,7 +85,7 @@ public class Calcolatrice {
 }
 ```
 
-## Creare una classe di test
+### Creare una classe di test
 
 Per l'esecuzione dei test bisogna creare una classe sotto la directory **src/test/java**.
 
@@ -130,7 +130,7 @@ public class CalcolatriceTest {
 }
 ```
 
-## Eseguire i test
+### Eseguire i test
 
 Per eseguire i test bisogna spostarsi nella cartella contenente il file **pom.xml** ed eseguire il seguente comando.
 

@@ -4,12 +4,12 @@ Questo tutorial mostra come creare un’applicazione Java 11 per recuperare le c
 
 [Codice GitHub](https://github.com/leogioia/tutorial/tree/master/java/utilizzare-file-di-properties-in-java)
 
-## Prerequisiti
+### Prerequisiti
 
 - Java 11
 - Maven
 
-## Aggiungere le dipendenze necessarie al pom.xml
+### Aggiungere le dipendenze necessarie al pom.xml
 
 Per la lettura delle properties si è scelto di sfruttare un'apposita libreria di Apache.
 
@@ -29,7 +29,7 @@ Per poterla utilizzare bisogna aggiungere nel file **pom.xml** le dipendenze **c
 </dependency>
 ```
 
-## Compilare il progetto indicando il JDK corretto
+### Compilare il progetto indicando il JDK corretto
 
 Per compilare il progetto utilizzando la corretta versione di Java bisogna aggiungere al file **pom.xml** il plugin maven **maven-compiler-plugin**.
 
@@ -44,7 +44,7 @@ Per compilare il progetto utilizzando la corretta versione di Java bisogna aggiu
 </plugin>
 ```
 
-## Creare un eseguibile jar
+### Creare un eseguibile jar
 
 Per creare un eseguibile jar, contenente anche le eventuali dipendenze utilizzare, bisogna aggiungere al file **pom.xml** il plugin maven **maven-assembly-plugin**.
 
@@ -80,7 +80,7 @@ Al termine della fase di **package** verrà creato un pacchetto jar all'interno 
 </plugin>
 ```
 
-## Creare una classe Main
+### Creare una classe Main
 
 Per l'utilizzo dell'applicazione bisogna creare una classe contenente un metodo **main**.
 
@@ -106,7 +106,7 @@ public class Main {
 }
 ```
 
-## Compilare l'applicazione
+### Compilare l'applicazione
 
 Per compilare l'applicazione bisogna spostarsi nella cartella contenente il file **pom.xml** ed eseguire il seguente comando.
 
@@ -114,7 +114,7 @@ Per compilare l'applicazione bisogna spostarsi nella cartella contenente il file
 mvn clean package
 ```
 
-## Eseguire l'applicazione
+### Eseguire l'applicazione
 
 Per eseguire l'applicazione bisogna spostarsi nella cartella **target** ed eseguire il seguente comando.
 
